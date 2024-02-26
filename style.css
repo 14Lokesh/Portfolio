@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#check {
+  display: none;
+}
+#check:checked ~ ul {
+  left: 0;
+}
+#check-button {
+  font-size: 1.9rem;
+  color: black;
+  display: none;
+}
+.top-header {
+  padding: 1rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+header nav ul li {
+  list-style: none;
+}
+header nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.hero-section {
+  padding: 0rem 1rem;
+}
+.self-description h1 {
+  font-size: 2rem;
+}
+.self-description h3 {
+  font-size: 1rem;
+}
+.site-links a {
+  margin-right: 1rem;
+  color: rgba(0, 0, 0, 0.863);
+}
+.site-links img {
+  width: 2.5rem;
+}
+.download-button {
+  display: block;
+  margin-top: 1rem;
+  color: black;
+  border: none;
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.764);
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.site-links button:hover {
+  transform: translateY(-5px);
+}
+
+#about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.self-description {
+  width: 50%;
+}
+.self-description h1 {
+  font-size: 3rem;
+}
+.self-description h3 {
+  font-size: 2rem;
+}
+.site-links a {
+  font-size: 2rem;
+}
+.banner-image {
+  width: 60%;
+}
+.banner-image img {
+  width: 100%;
+}
+.exp-container {
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+.experience-heading {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+.experience-section {
+  margin-bottom: 20px;
+}
+
+.experience-section h2 {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.experience-section h3 {
+  font-size: 18px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.experience-section span {
+  font-size: 16px;
+  color: #999;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.experience-section p {
+  font-size: 16px;
+  color: #666;
+}
+#experience {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  margin: auto;
+}
+
+.project-card {
+  padding: 1rem;
+}
+.project-card h2,
+.skill-section h2,
+.contact-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+  gap: 1rem;
+  border: none;
+}
+.card-box {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+}
+
+.card-box img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card-box h1 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-box p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card-box a {
+  font-size: 16px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+.card-box a:hover {
+  color: #0056b3;
+}
+
+.skill-card {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.skill-card img {
+  width: 50px;
+  height: 50px;
+}
+.skill-card-box {
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.skill-card-box h4 {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.skill-card-box:hover {
+  transform: translateY(-5px);
+}
+.contact-section h2 {
+  margin-top: 2rem;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 1rem;
+}
+
+.social-icon i {
+  font-size: 2rem;
+}
+footer {
+  background: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.container-section {
+  max-width: 1300px;
+  margin: auto;
+}
+
+@media (max-width: 1400px) {
+  .card {
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+@media (max-width: 1140px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1024px) {
+  .card {
+    flex-wrap: wrap;
+  }
+  .card-box {
+    width: 330px;
+  }
+}
+@media (max-width: 997px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media (max-width: 769px) {
+  html {
+    font-size: 12px;
+  }
+  #check-button {
+    display: block;
+  }
+  nav ul {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: -100%;
+    transition: 0.5s;
+    background-color: #0056b3;
+    height: 40vh;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  nav ul li {
+    display: block;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+  .self-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-image {
+    width: 80%;
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .self-description h1 {
+    font-size: 2.5rem;
+  }
+  .self-description h3 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 340px) {
+  .self-description h1 {
+    font-size: 2rem;
+  }
+  .self-description h3 {
+    font-size: 1.5rem;
+  }
+}
